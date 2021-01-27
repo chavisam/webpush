@@ -43,9 +43,9 @@ class HelloNotification extends Notification
     public function toArray($notifiable)
     {
         return [
-            'title' => 'Hello from Laravel!',
-            'body' => 'Thank you for using our application.',
-            'action_url' => 'https://laravel.com',
+            'title' => 'Saludos de J Manvel Apps!',
+            'body' => 'Gracias por usar nuestra App.',
+            'action_url' => 'https://www.jmanvel.com',
             'created' => Carbon::now()->toIso8601String(),
         ];
     }
@@ -60,9 +60,9 @@ class HelloNotification extends Notification
     public function toWebPush($notifiable, $notification)
     {
         return (new WebPushMessage)
-            ->title('Hello from Laravel!')
+            ->title('Saludos de J Manvel Apps!')
             ->icon('/notification-icon.png')
-            ->body('Thank you for using our application.')
+            ->body('Gracias por usar nuestra App')
             ->action('View app', 'view_app')
             ->data(['id' => $notification->id]);
     }
