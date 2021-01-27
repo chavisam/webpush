@@ -6,7 +6,7 @@
       type="button"
       class="btn btn-success btn-send" @click="sendNotification"
     >
-      Send Notification
+      Enviar notificación Push
     </button>
 
     <!-- Enable/Disable push notifications -->
@@ -17,7 +17,7 @@
       :class="{ 'btn-primary': !isPushEnabled, 'btn-danger': isPushEnabled }"
       @click="togglePush"
     >
-      {{ isPushEnabled ? 'Disable' : 'Enable' }} Push Notifications
+      {{ isPushEnabled ? 'Disable' : 'Enable' }} Notificaciones Push
     </button>
   </div>
 </template>

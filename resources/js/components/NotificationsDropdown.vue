@@ -7,11 +7,11 @@
     <div class="dropdown-container">
       <div class="dropdown-toolbar">
         <div v-show="hasUnread" class="dropdown-toolbar-actions">
-          <a href="#" @click.prevent="markAllRead">Mark all as read</a>
+          <a href="#" @click.prevent="markAllRead">Marcar todas como leídas</a>
         </div>
 
         <h3 class="dropdown-toolbar-title">
-          Notifications ({{ total }})
+          Notificaciones ({{ total }})
         </h3>
       </div>
 
@@ -23,12 +23,12 @@
         />
 
         <li v-if="!hasUnread" class="notification">
-          You don't have any unread notifications.
+          No tienes notificaciones sin leer.
         </li>
       </ul>
 
       <div v-if="hasUnread" class="dropdown-footer text-center">
-        <a href="#" @click.prevent="fetch(null)">View All</a>
+        <a href="#" @click.prevent="fetch(null)">Ver todas</a>
       </div>
     </div>
   </li>
